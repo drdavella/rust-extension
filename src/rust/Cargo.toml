@@ -1,0 +1,12 @@
+[package]
+name = "example-corelib"
+version = "0.1.0"
+publish = false
+rust-version = "1.56.0"
+
+[dependencies]
+pyo3 = { version = "0.18.1", features = ["extension-module"] }
+
+[lib]
+name = "_corelib"
+crate-type = ["cdylib"]

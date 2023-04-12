@@ -1,0 +1,4 @@
+include pyproject.toml
+
+recursive-include src/rust Cargo.toml Cargo.lock *.rs
+recursive-exclude target *
